@@ -22,6 +22,13 @@
 		3CFF979A267247AF00EC2E90 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFF9799267247AF00EC2E90 /* Game.swift */; };
 		3CFF979C267248F600EC2E90 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFF979B267248F600EC2E90 /* GameSession.swift */; };
 		3CFF979F2672680800EC2E90 /* GameSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFF979E2672680800EC2E90 /* GameSessionDelegate.swift */; };
+		CFDBD1AD28AA8CE70085A2EE /* CreateSequenceStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBD1AC28AA8CE70085A2EE /* CreateSequenceStrategy.swift */; };
+		CFDBD1AF28AA8D1E0085A2EE /* QuestionCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBD1AE28AA8D1E0085A2EE /* QuestionCaretaker.swift */; };
+		CFDBD1B128AA8D430085A2EE /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBD1B028AA8D430085A2EE /* Sequence.swift */; };
+		CFDBD1B328AA8D5A0085A2EE /* SequentialQuestionsCreateStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBD1B228AA8D5A0085A2EE /* SequentialQuestionsCreateStrategy.swift */; };
+		CFDBD1B528AA8D720085A2EE /* RandomQuestionsCreateStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBD1B428AA8D720085A2EE /* RandomQuestionsCreateStrategy.swift */; };
+		CFDBD1B928AA8DAF0085A2EE /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBD1B828AA8DAF0085A2EE /* SetupViewController.swift */; };
+		CFDBD1BB28AA8DCB0085A2EE /* AddingQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDBD1BA28AA8DCB0085A2EE /* AddingQuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		3CFF9799267247AF00EC2E90 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3CFF979B267248F600EC2E90 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
 		3CFF979E2672680800EC2E90 /* GameSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSessionDelegate.swift; sourceTree = "<group>"; };
+		CFDBD1AC28AA8CE70085A2EE /* CreateSequenceStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSequenceStrategy.swift; sourceTree = "<group>"; };
+		CFDBD1AE28AA8D1E0085A2EE /* QuestionCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCaretaker.swift; sourceTree = "<group>"; };
+		CFDBD1B028AA8D430085A2EE /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		CFDBD1B228AA8D5A0085A2EE /* SequentialQuestionsCreateStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionsCreateStrategy.swift; sourceTree = "<group>"; };
+		CFDBD1B428AA8D720085A2EE /* RandomQuestionsCreateStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionsCreateStrategy.swift; sourceTree = "<group>"; };
+		CFDBD1B828AA8DAF0085A2EE /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		CFDBD1BA28AA8DCB0085A2EE /* AddingQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingQuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,8 @@
 				3CE362CA2670F738008AAACB /* GameViewController.swift */,
 				3C3604BA267371DE00D08385 /* ResultatsTableViewController.swift */,
 				3CFF97932672160C00EC2E90 /* CustomAlertViewController.swift */,
+				CFDBD1B828AA8DAF0085A2EE /* SetupViewController.swift */,
+				CFDBD1BA28AA8DCB0085A2EE /* AddingQuestionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -105,6 +121,10 @@
 				3CFF9799267247AF00EC2E90 /* Game.swift */,
 				3CFF979B267248F600EC2E90 /* GameSession.swift */,
 				3C3604BC2673776F00D08385 /* RecordsCaretaker.swift */,
+				CFDBD1AE28AA8D1E0085A2EE /* QuestionCaretaker.swift */,
+				CFDBD1B028AA8D430085A2EE /* Sequence.swift */,
+				CFDBD1B228AA8D5A0085A2EE /* SequentialQuestionsCreateStrategy.swift */,
+				CFDBD1B428AA8D720085A2EE /* RandomQuestionsCreateStrategy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +134,7 @@
 			children = (
 				3CFF979E2672680800EC2E90 /* GameSessionDelegate.swift */,
 				3C3604B826736B8500D08385 /* GameViewControllerDelegate.swift */,
+				CFDBD1AC28AA8CE70085A2EE /* CreateSequenceStrategy.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -190,16 +211,23 @@
 			files = (
 				3C3604B926736B8500D08385 /* GameViewControllerDelegate.swift in Sources */,
 				3CE362CB2670F738008AAACB /* GameViewController.swift in Sources */,
+				CFDBD1AF28AA8D1E0085A2EE /* QuestionCaretaker.swift in Sources */,
 				3CFF97942672160C00EC2E90 /* CustomAlertViewController.swift in Sources */,
 				3C3604BB267371DE00D08385 /* ResultatsTableViewController.swift in Sources */,
 				3CFF979C267248F600EC2E90 /* GameSession.swift in Sources */,
 				3CFF979A267247AF00EC2E90 /* Game.swift in Sources */,
+				CFDBD1BB28AA8DCB0085A2EE /* AddingQuestionViewController.swift in Sources */,
 				3CE362DB26711D9A008AAACB /* Question.swift in Sources */,
+				CFDBD1B128AA8D430085A2EE /* Sequence.swift in Sources */,
+				CFDBD1B528AA8D720085A2EE /* RandomQuestionsCreateStrategy.swift in Sources */,
 				3CFF979F2672680800EC2E90 /* GameSessionDelegate.swift in Sources */,
 				3CFF979626723DB400EC2E90 /* MainViewController.swift in Sources */,
 				3CE362C72670F738008AAACB /* AppDelegate.swift in Sources */,
+				CFDBD1B928AA8DAF0085A2EE /* SetupViewController.swift in Sources */,
 				3C3604BD2673776F00D08385 /* RecordsCaretaker.swift in Sources */,
+				CFDBD1AD28AA8CE70085A2EE /* CreateSequenceStrategy.swift in Sources */,
 				3CE362C92670F738008AAACB /* SceneDelegate.swift in Sources */,
+				CFDBD1B328AA8D5A0085A2EE /* SequentialQuestionsCreateStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

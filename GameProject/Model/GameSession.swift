@@ -44,7 +44,7 @@ class GameSession: Codable {
         if answer == currentQuestion?.correctAnswer {
             return true
         }
-        return false    
+        return false
     }
     
     func checkIfUserWouldContinueGame(userAnswer: Bool, currentQuestionNum: Int) {
